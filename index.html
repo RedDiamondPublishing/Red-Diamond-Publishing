@@ -6,160 +6,93 @@
   <title>Red Diamond Publishing – Premium Bundle</title>
   <meta name="description" content="Red Diamond Premium Bundle – 50 brutale Wahrheiten. Handbuch, Workbook, Audio-Lessons, Habit-Tracker.">
   <style>
-    :root {
-      --bg:#0c0c0c;--fg:#222;--muted:#666;--card:#fff;--line:#eee;--brand:#d31e25;
-      --radius:14px;--shadow:0 6px 20px rgba(0,0,0,.10);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;color:var(--fg);background:#f8f8f8}
-    a{color:var(--brand);text-decoration:none}
-    .topbar{background:var(--bg);color:#eee;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(255,255,255,.06)}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-    .nav{display:flex;align-items:center;gap:16px;padding:10px 0}
-    .nav img{height:26px}
-    .nav strong{font-weight:700}
-    .nav-links{margin-left:auto;display:flex;gap:16px;align-items:center}
-    .btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;box-shadow:var(--shadow)}
-    .btn.secondary{background:#111}
-    main{min-height:100vh}
-    section{padding:26px 0}
-    h1,h2{margin:0 0 12px}
-    h2{font-size:20px}
-    .muted{color:var(--muted)}
-    .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    ul.features{margin:12px 0 10px 18px;line-height:1.5}
-    ul.features li{margin:6px 0}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
-    .thumb{width:100%;aspect-ratio:3/4;object-fit:cover;background:#ddd}
-    .card .body{padding:12px;display:flex;flex-direction:column;gap:8px}
-    .note{font-size:12px;color:#666;line-height:1.35}
-    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .btn-row{display:flex;gap:8px;flex-wrap:wrap}
-    footer{background:#f2f2f2;border-top:1px solid #e6e6e6;padding:20px 0 50px}
-    .hero-title{display:flex;align-items:center;gap:8px;color:#d31e25;font-weight:800}
-    @media (max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}.two-col{grid-template-columns:1fr}}
-    @media (max-width:560px){.grid{grid-template-columns:1fr}.nav-links{display:none}}
+    body { font-family: Arial, sans-serif; background: #f8f8f8; margin:0; padding:0; }
+    header { background:#111; color:#fff; padding:10px; display:flex; align-items:center; }
+    header img { height:40px; margin-right:10px; }
+    nav { margin-left:auto; }
+    nav a { color:#fff; margin-left:15px; text-decoration:none; }
+    .wrap { max-width:1000px; margin:20px auto; padding:0 16px; }
+    .card-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .card { background:#fff; border:1px solid #ddd; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .card img { width:100%; height:auto; display:block; }
+    .card .body { padding:12px; }
+    .btn { display:inline-block; padding:10px 14px; background:#d31e25; color:#fff; border-radius:20px; font-weight:bold; text-decoration:none; }
+    footer { background:#f2f2f2; padding:20px; margin-top:40px; }
   </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="wrap nav">
-    <!-- Logo -->
-    <img src="logo.png" alt="Red Diamond Publishing">
-    <strong>Red Diamond Publishing</strong>
-    <nav class="nav-links">
-      <a href="#bundle">Bundle</a>
-      <a href="#books">Bücher</a>
-      <a href="#autor">Über die Autorin</a>
-      <a href="#widerruf">Widerruf</a>
-      <a href="#impressum">Impressum</a>
-      <a class="btn" href="#kaufen">Jetzt kaufen</a>
-    </nav>
-  </div>
+<header>
+  <img src="logo.png" alt="Logo Red Diamond Publishing">
+  <strong>Red Diamond Publishing</strong>
+  <nav>
+    <a href="#bundle">Bundle</a>
+    <a href="#books">Bücher</a>
+    <a href="#autor">Autorin</a>
+    <a href="#widerruf">Widerruf</a>
+    <a href="#impressum">Impressum</a>
+  </nav>
 </header>
 
-<main>
-  <!-- BUNDLE -->
+<main class="wrap">
   <section id="bundle">
-    <div class="wrap panel">
-      <div class="hero-title">🔥 Red Diamond Premium Bundle (199 €)</div>
-      <p class="muted" style="font-size:12px;margin-top:6px">Eines der besten Bücher der Welt – die härteste Wahrheitsschule für radikalen Erfolg.</p>
-      <ul class="features">
-        <li><strong>Handbuch:</strong> 50 Wahrheiten, die dich aufwecken.</li>
-        <li><strong>Motivationskarten:</strong> 50 exklusive Kurzsätze – tägliche Reminder.</li>
-        <li><strong>Workbook:</strong> Übungen &amp; Challenges, die Theorie in Handlung verwandeln.</li>
-        <li><strong>Audio-Lessons:</strong> 35–60 Minuten Fokus für Disziplin im Alltag.</li>
-        <li><strong>Habit-Tracker &amp; Challenges:</strong> Dein Kompass für messbare Ergebnisse.</li>
-      </ul>
-      <p><strong>Dein Vorteil:</strong> Endlich Erfolg dort, wo du bisher gescheitert bist.<br>
-         <strong>Dein Gewinn:</strong> Disziplin, Klarheit und bleibende Ergebnisse.<br>
-         <strong>Dein Muss:</strong> Dieses Bundle – alles andere bedeutet ein weiteres verlorenes Jahr.</p>
-      <a id="kaufen" class="btn" href="#">Jetzt Premium Bundle sichern</a>
-    </div>
+    <h1>🔥 Red Diamond Premium Bundle (199 €)</h1>
+    <ul>
+      <li><strong>Handbuch:</strong> 50 Wahrheiten, die dich aufwecken.</li>
+      <li><strong>Motivationskarten:</strong> 50 exklusive Kurzsätze – tägliche Reminder.</li>
+      <li><strong>Workbook:</strong> Übungen &amp; Challenges.</li>
+      <li><strong>Audio-Lessons:</strong> 35–60 Minuten Fokus.</li>
+      <li><strong>Habit-Tracker:</strong> Dein Kompass für Ergebnisse.</li>
+    </ul>
+    <a href="#" class="btn">Jetzt Premium Bundle sichern</a>
   </section>
 
-  <!-- BÜCHER -->
   <section id="books">
-    <div class="wrap">
-      <h2>📚 Bücher &amp; Editionen</h2>
-      <div class="grid">
-        <!-- DE -->
-        <article class="card">
-          <img class="thumb" src="cover-de.png" alt="Deutsches Handbuch – Werd wach oder geh unter">
-          <div class="body">
-            <strong>Deutsches Handbuch</strong>
-            <a class="btn" href="#">199 € Premium-Bundle</a>
-            <p class="note">Auch in anderen Sprachen erhältlich. Demnächst Trainerbuch für 499 € verfügbar.</p>
-          </div>
-        </article>
-
-        <!-- EN -->
-        <article class="card">
-          <img class="thumb" src="cover-en.png" alt="English Edition – Wake Up or Drown">
-          <div class="body">
-            <strong>English Handbook</strong>
-            <a class="btn" href="#">$199 Premium-Bundle</a>
-            <p class="note">Also available in other languages. Coming soon: Trainer’s Handbook for 499.</p>
-          </div>
-        </article>
-
-        <!-- ES -->
-        <article class="card">
-          <img class="thumb" src="cover-es.png" alt="Edición en Español – Despierta o húndete">
-          <div class="body">
-            <strong>Edición en Español</strong>
-            <a class="btn" href="#">199 € Premium-Bundle</a>
-            <p class="note">También disponible en otros idiomas. Muy pronto: Manual del entrenador por 499.</p>
-          </div>
-        </article>
-
-        <!-- FR -->
-        <article class="card">
-          <img class="thumb" src="cover-fr.png" alt="Édition Française – Réveille-toi ou coule">
-          <div class="body">
-            <strong>Édition Française</strong>
-            <a class="btn" href="#">199 € Premium-Bundle</a>
-            <p class="note">Également disponible dans d’autres langues. Bientôt: Manuel du formateur à 499.</p>
-          </div>
-        </article>
+    <h2>📚 Bücher & Editionen</h2>
+    <div class="card-grid">
+      <!-- DE -->
+      <div class="card">
+        <img src="cover-de.png" alt="Deutsches Cover">
+        <div class="body">
+          <strong>Deutsches Handbuch</strong><br>
+          <a href="#" class="btn">199 € Premium-Bundle</a>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Autorin & Danksagung -->
-  <section id="autor">
-    <div class="wrap two-col">
-      <div class="panel"><h2>✍️ Über die Autorin</h2><p>Die Autorin dieses Buches ist keine Theoretikerin ...</p></div>
-      <div class="panel"><h2>🙏 Danksagung</h2><p>Dieses Buch wurde nichts ohne die Menschen ...</p></div>
-    </div>
-  </section>
-
-  <!-- Widerruf -->
-  <section id="widerruf">
-    <div class="wrap panel">
-      <h2>↩️ Widerrufsrecht / Rückgaberecht</h2>
-      <p><strong>EU:</strong> Gesetzliches Widerrufsrecht von 14 Tagen.</p>
-      <p><strong>USA, UK, Irland:</strong> Erweitertes Rückgaberecht von 60 Tagen.</p>
-      <p class="muted" style="font-size:12px">Abwicklung über Digistore24.</p>
-      <p>Support: <a href="mailto:diamondnews@proton.me">diamondnews@proton.me</a></p>
+      <!-- EN -->
+      <div class="card">
+        <img src="cover-en.png" alt="English Cover">
+        <div class="body">
+          <strong>English Handbook</strong><br>
+          <a href="#" class="btn">$199 Premium-Bundle</a>
+        </div>
+      </div>
+      <!-- ES -->
+      <div class="card">
+        <img src="cover-es.png" alt="Spanish Cover">
+        <div class="body">
+          <strong>Edición en Español</strong><br>
+          <a href="#" class="btn">199 € Premium-Bundle</a>
+        </div>
+      </div>
+      <!-- FR -->
+      <div class="card">
+        <img src="cover-fr.png" alt="French Cover">
+        <div class="body">
+          <strong>Édition Française</strong><br>
+          <a href="#" class="btn">199 € Premium-Bundle</a>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
-<!-- Impressum -->
 <footer id="impressum">
-  <div class="wrap">
-    <h2>📑 Impressum</h2>
-    <p><strong>Red Diamond Publishing</strong><br>
-    Moelkaerweg 24<br>
-    7870 Røslev<br>
-    Email: <a href="mailto:diamondnewsone@proton.de">diamondnewsone@proton.de</a><br>
-    CVR: 45445925<br>
-    Verantwortlich für den Inhalt: Red Diamond</p>
-    <p class="muted">© 2025 Red Diamond. Alle Rechte vorbehalten.</p>
-  </div>
+  <p><strong>Red Diamond Publishing</strong><br>
+  Moelkaerweg 24, 7870 Røslev<br>
+  Email: diamondnewsone@proton.de<br>
+  CVR: 45445925<br>
+  Verantwortlich: Red Diamond</p>
+  <p>© 2025 Red Diamond. Alle Rechte vorbehalten.</p>
 </footer>
 
 </body>
